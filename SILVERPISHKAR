@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="utf-8">
+<title>Store</title>
+<style>
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+background-image: url("top-silver-bar-site-4.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed; 
+color: #333;
+min-height: 100vh;
+}
+
+.navarbala {
+position: fixed;
+top: 0;
+width: 100%;
+height: 50px;
+background: rgba(255,255,255,0.9);
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 20px;
+box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+z-index: 100;
+}
+
+.logo {
+font-weight: bold;
+font-size: 24px;
+background: linear-gradient(90deg, rgb(131, 131, 132), black);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+display: flex;
+gap: 20px;
+}
+
+.nav-links span {
+font-weight: bold;
+cursor: pointer;
+transition: color 0.3s;
+}
+
+.nav-links span:hover {
+color: rgb(135, 130, 135);
+}
+
+.about {
+margin-top: 80px;
+text-align: center;
+padding: 40px 20px 20px;
+}
+
+.about-title {
+font-size: 36px;
+font-weight: bold;
+background: linear-gradient(90deg, rgb(151, 151, 154), rgb(142, 139, 139));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.underline {
+width: 60px;
+height: 4px;
+background-color: #7b7b7e;
+margin: 10px auto 0;
+border-radius: 2px;
+}
+
+
+.cards-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 20px;
+max-width: 1200px;
+margin: 40px auto;
+padding: 0 20px;
+}
+
+.card {
+background: rgba(255,255,255,0.95); 
+border-radius: 12px;
+padding: 20px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+transition: transform 0.3s, box-shadow 0.3s;
+text-align: center;
+font-weight: bold;
+height: 300px;
+cursor: pointer;
+backdrop-filter: blur(5px); 
+}
+
+.card:hover {
+transform: translateY(-10px) scale(1.05);
+box-shadow: 0 10px 20px rgba(179, 177, 177, 0.3);
+}
+.pricetag{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.container {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+max-width: 1200px;
+margin: 40px auto;
+padding: 0 20px;
+}
+
+.box {
+flex: 1 1 200px;
+background-color: #eee;
+padding: 20px;
+border-radius: 8px;
+text-align: center;
+font-weight: bold;
+}
+
+@media (max-width: 768px) {
+.nav-links {
+gap: 10px;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="navarbala">
+<span class="logo">SILVER PISHKAR</span>
+<div class="nav-links">
+<span>Home</span>
+<span>About</span>
+<span>Skills</span>
+<span>Courses</span>
+<span>Contact</span>
+</div>
+</div>
+
+<div class="about">
+<h2 class="about-title">STORE</h2>
+<div class="underline"></div>
+</div>
+
+<div class="cards-container">
+<div class="card" style="background-image: url(IMG_0745.jpeg);">
+    <div class="pricetag">500</div>
+</div>
+<div class="card"style="background-image: url(IMG_0745.jpeg);">
+      <div class="pricetag">500</div>
+</div>
+<div class="card" style="background-image: url(IMG_0745.jpeg);">
+      <div class="pricetag">500</div>
+</div>
+<div class="card" style="background-image: url(IMG_0745.jpeg);"> 
+     <div class="pricetag">500</div></div>
+<div class="card" style="background-image: url(IMG_0745.jpeg);">
+      <div class="pricetag">500</div>
+</div>
+</div>
+
+</body>
+</html>
